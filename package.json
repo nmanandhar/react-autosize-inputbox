@@ -1,0 +1,42 @@
+{
+  "name": "react-autosize-inputbox",
+  "version": "0.0.0",
+  "description": "A simple and small resizable input box",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "bundle": "microbundle --jsx React.createElement -f modern,umd",
+    "bundle:watch": "npm run bundle -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run bundle"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "microbundle": "^0.12.0-next.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmanandhar/react-autosize-inputbox.git"
+  },
+  "keywords": [
+    "resizable",
+    "input"
+  ],
+  "author": "Nirmal Manandhar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nmanandhar/react-autosize-inputbox/issues"
+  },
+  "homepage": "https://github.com/nmanandhar/react-autosize-inputbox#readme",
+  "files": [
+    "dist"
+  ]
+}
